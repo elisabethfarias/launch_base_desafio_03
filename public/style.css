@@ -95,6 +95,7 @@ header {
 .card {
   background-color: var(--color-rocket);
   border: 2px solid transparent;
+  display: grid;
 }
 
 .card:hover {
@@ -113,6 +114,7 @@ header {
 .card__content,
 .card__info {
   padding: 15px;
+  text-align: center;
 }
 
 .card__info {

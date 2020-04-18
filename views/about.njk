@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cursos Rocketseat</title>
+  </head>
+  <body>
+    <header>
+      <div class="links">
+        <a href="/about">Sobre</a>
+        <a href="/" target="_blank">Aulas</a>
+      </div>
+      
+    </header>
+    
+    <div id="wrapper">
+      <img src="{{ about.avatar_url }}" alt="Imagem de {{ about.name }}">
+      <h1>{{ about.name }}</h1>
+      <h2>{{ about.role }}</h2>
+      <p>{{ about.description }}</p>
+    </div>
+
+    <div id="links-footer" class="links">
+      {% for link in about.links %}
+        <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+      {% endfor %}
+    </div>
+  </body>
+</html>
