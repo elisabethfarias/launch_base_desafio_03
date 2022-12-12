@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/elisabethfarias/launch_base_desafio_2-3#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nunjucks": "^3.2.1"
   },
   "devDependencies": {
